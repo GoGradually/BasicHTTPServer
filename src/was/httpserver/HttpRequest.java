@@ -8,6 +8,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+import static util.MyLogger.log;
+
 public class HttpRequest {
     private String method;
     private String path;
@@ -18,7 +20,9 @@ public class HttpRequest {
     public HttpRequest(BufferedReader reader) throws IOException {
         parseRequestLine(reader);
         parseHeader(reader);
+        parseBody(reader);
     }
+
 
     public String getMethod() {
         return method;
@@ -48,7 +52,7 @@ public class HttpRequest {
 
     private void parseHeader(BufferedReader reader) throws IOException {
         String line;
-        while(!(line = reader.readLine()).isEmpty()){
+        while (!(line = reader.readLine()).isEmpty()) {
             String[] headerParts = line.split(":");
             headers.put(headerParts[0].trim(), headerParts[1].trim());
         }
@@ -79,6 +83,24 @@ public class HttpRequest {
             String key = URLDecoder.decode(keyValue[0], StandardCharsets.UTF_8);
             String value = keyValue.length > 1 ? URLDecoder.decode(keyValue[1], StandardCharsets.UTF_8) : "";
             queryParameters.put(key, value);
+        }
+    }
+
+    private void parseBody(BufferedReader reader) throws IOException {
+        if (!headers.containsKey("Content-Length"))
+            return;
+        int contentLength = Integer.parseInt(headers.get("Content-Length"));
+        char[] bodyChars = new char[contentLength];
+        int read = reader.read(bodyChars);
+        if (read != contentLength) {
+            throw new IOException("Fail to read entire body. Expected " + contentLength + " bytes, but read " + read);
+        }
+        String body = new String(bodyChars);
+        log("HTTP Message body: " + body);
+
+        String contentType = headers.get("Content-Type");
+        if("application/x-www-form-urlencoded".equals(contentType)){
+            parseQueryParameters(body);
         }
     }
 }

@@ -10,6 +10,7 @@ public class HttpResponse {
     private int statusCode = 200;
     private final StringBuilder bodyBuilder = new StringBuilder();
     private String contentType = "text/html; charset=UTF-8";
+    private String location;
 
     public HttpResponse(PrintWriter writer) {
         this.writer = writer;
@@ -23,6 +24,10 @@ public class HttpResponse {
         this.contentType = contentType;
     }
 
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public void writeBody(String body) {
         bodyBuilder.append(body);
     }
@@ -33,6 +38,7 @@ public class HttpResponse {
                 getReasonPhrase(statusCode));
         writer.println("Content-Type: " + contentType);
         writer.println("Content-Length: " + contentLength);
+        if(location != null) writer.println("Location: " + location);
         writer.println();
         writer.println(bodyBuilder);
         writer.flush();
