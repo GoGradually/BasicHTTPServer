@@ -12,7 +12,7 @@ public class ServerMainV8 {
     private static final int PORT = 12345;
 
     public static void main(String[] args) throws IOException {
-        List<Object> controllers = List.of(new SerachControllerV8(), new SiteControllerV8());
+        List<Object> controllers = List.of(new SearchControllerV8(), new SiteControllerV8());
         AnnotationServletV3 servlet = new AnnotationServletV3(controllers);
 
         ServletManager servletManager = new ServletManager();

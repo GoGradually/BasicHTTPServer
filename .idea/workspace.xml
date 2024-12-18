@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0018acb-1154-45dd-b8ac-fb5958ad2630" name="Changes" comment="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행">
+    <list default="true" id="c0018acb-1154-45dd-b8ac-fb5958ad2630" name="Changes" comment="feat: MemberRepository 구현&#10;&#10;- 단순한 파일 입출력을 통한 Member Repository 구현">
+      <change afterPath="$PROJECT_DIR$/src/webservice/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webservice/MemberServiceMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,13 +79,13 @@
       <recent name="was.v4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServerMainV8">
-    <configuration name="MethodV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="reflection.MethodV1" />
+  <component name="RunManager" selected="Application.MemberServiceMain">
+    <configuration name="MemberServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservice.MemberServiceMain" />
       <module name="BasicHTTPServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="reflection.*" />
+          <option name="PATTERN" value="webservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MemberServiceMain" />
         <item itemvalue="Application.ServerMainV8" />
         <item itemvalue="Application.ServerMainV7" />
         <item itemvalue="Application.TestControllerMain" />
         <item itemvalue="Application.ServerMainV6" />
-        <item itemvalue="Application.MethodV1" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +167,7 @@
       <workItem from="1734347070547" duration="28387000" />
       <workItem from="1734492614636" duration="6000" />
       <workItem from="1734492631327" duration="6000" />
+      <workItem from="1734492699521" duration="449000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행">
       <option name="closed" value="true" />
@@ -174,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734492499362</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: MemberRepository 구현&#10;&#10;- 단순한 파일 입출력을 통한 Member Repository 구현">
+      <option name="closed" value="true" />
+      <created>1734492814782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734492814782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행" />
+    <MESSAGE value="feat: MemberRepository 구현&#10;&#10;- 단순한 파일 입출력을 통한 Member Repository 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: MemberRepository 구현&#10;&#10;- 단순한 파일 입출력을 통한 Member Repository 구현" />
   </component>
 </project>
