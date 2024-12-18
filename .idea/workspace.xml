@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0018acb-1154-45dd-b8ac-fb5958ad2630" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/HttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/HttpRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/HttpResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/HttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/PageNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/ServletManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/DiscardServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/InternalErrorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/NotFoundServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/annotation/AnnotationServletV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/annotation/AnnotationServletV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/annotation/AnnotationServletV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/annotation/Mapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/httpserver/servlet/reflection/ReflectionServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v1/HttpServerV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v1/ServerMainV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v2/HttpRequestHandlerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v2/HttpServerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v2/ServerMainV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v3/HttpRequestHandlerV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v3/HttpServerV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v3/ServerMainV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v4/HttpRequestHandlerV4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v4/HttpServerV4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v4/ServerMainV4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v5/ServletMainV5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v5/servlet/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v5/servlet/SearchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v5/servlet/Site1Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v5/servlet/Site2Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v6/SerachControllerV6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v6/ServerMainV6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v6/SiteControllerV6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v7/SerachControllerV7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v7/ServerMainV7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v7/SiteControllerV7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v8/SerachControllerV8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v8/ServerMainV8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/was/v8/SiteControllerV8.java" afterDir="false" />
+    <list default="true" id="c0018acb-1154-45dd-b8ac-fb5958ad2630" name="Changes" comment="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,35 +33,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BasicV1.executor": "Run",
-    "Application.BasicV2.executor": "Run",
-    "Application.MethodV1.executor": "Run",
-    "Application.ServerMain.executor": "Run",
-    "Application.ServerMainV3.executor": "Run",
-    "Application.ServerMainV4.executor": "Run",
-    "Application.ServerMainV6.executor": "Run",
-    "Application.ServerMainV7.executor": "Run",
-    "Application.ServerMainV8.executor": "Run",
-    "Application.ServletMainV5.executor": "Run",
-    "Application.TestControllerMain.executor": "Run",
-    "Application.main.executor": "Run",
-    "Application.was.v2.ServerMain.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chkun/Documents/GitHub/BasicHTTPServer/src/was",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BasicV1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BasicV2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodV1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMainV3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMainV4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMainV6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMainV7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMainV8.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServletMainV5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestControllerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.was.v2.ServerMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chkun/Documents/GitHub/BasicHTTPServer/src/was&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chkun\Documents\GitHub\BasicHTTPServer\src\was" />
@@ -203,11 +162,26 @@
       <option name="presentableId" value="Default" />
       <updated>1734347045322</updated>
       <workItem from="1734347046418" duration="13000" />
-      <workItem from="1734347070547" duration="27909000" />
+      <workItem from="1734347070547" duration="28387000" />
+      <workItem from="1734492614636" duration="6000" />
+      <workItem from="1734492631327" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행">
+      <option name="closed" value="true" />
+      <created>1734492499362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734492499362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Annotation 을 이용한 WAS 프레임워크 완성&#10;&#10;- 어노테이션을 이용해 핸들러 매핑&#10;- 리플렉션을 이용해 서블릿 탐색 및 핸들러 실행" />
   </component>
 </project>
