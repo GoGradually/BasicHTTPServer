@@ -26,7 +26,7 @@ public class HttpServer {
 
         while (true) {
             Socket socket = serverSocket.accept();
-            es.submit(new HttpRequestHandlerV4(socket));
+            es.submit(new HttpRequestHandler(socket, servletManager));
         }
     }
 }
